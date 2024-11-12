@@ -45,7 +45,7 @@ app.post("/produtos", async(req,res)=>{
         res.send(result)
     }catch(e){
         console.log(e)
-        res.status(500).send("Server ERROR")
+        res.status(500).send(e)
     }
 })
 
